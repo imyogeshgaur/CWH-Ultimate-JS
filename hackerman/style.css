@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+}
+.fore-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: blur(1px); */
+}
+html {
+    font-size: 47%;
+      font-family: 'Silkscreen', cursive;
+}
+.intro {
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 2rem;
+/*     border-radius: 2rem; */
+    color: rgb(0, 255, 0);
+/*     font-family: Arial, Helvetica, sans-serif; */
+    font-size: 3rem;
+    flex-direction: column;
+    border: lime 5px solid;
+}
+body {
+    background-color: black;
+}
+.name  {
+    height: 4rem;
+    background-color: transparent;
+/*     font-family: consolas, monospace; */
+    /* color: rgb(0, 255, 0); */
+
+    border: 2px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.name::placeholder {
+    color: rgb(0, 255, 0);
+    padding-left: 1rem;
+}
+.btn {
+    display: inline;
+    padding: 1rem 1rem 1rem 1rem;
+    /* width: 9rem; */
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: rgb(0, 255, 0) 3px solid;
+    background: none;
+    margin-top: 1rem;
+    color: rgb(0, 255, 0);
+    transition: 0.5s ease-in-out;
+      font-family: 'Silkscreen', cursive;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 255, 0, 0.201);
+    color: rgba(0, 255, 0, 0.541);
+    border-color: rgb(0, 255, 0);
+}
+h1 {
+    color: lime;
+    font-size: 3em;
+    font-family: consolas;
+      font-family: 'Silkscreen', cursive;
+
+    margin: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+.body {
+    height: 100%;
+    width: 100%;
+
+}
