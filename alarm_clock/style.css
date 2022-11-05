@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center; /*CROSS AXIS */
+  justify-content: center; /* Main AXIS */
+}
+.container {
+  width: 80%;
+}
+.clock-wrapper {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  -ms-flex-align: stretch !important;
+  align-items: stretch !important;
+}
+#clock-card {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+  background: linear-gradient(to right, #aa076b, #61045f);
+}
+#clock-card,
+#alarm-card {
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+}
+#clock-card .datetext {
+  padding: 35px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  height: 100%;
+}
+#alarm-card {
+  min-height: 350px;
+  padding: 25px;
+  background: linear-gradient(#d1a837, rgb(233, 209, 104));
+  box-shadow: unset;
+  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  justify-content: start;
+}
+#alarmClock {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+#clock-card .time-wrapper,
+#alarm-card .time-wrapper {
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+}
+#clock-card .common-card,
+#clock-card .seprator-card {
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+#clock-card .seprator-card {
+  height: 100px;
+  width: 10px;
+}
+#alarmHelp {
+  color: #6e02da;
+}
+#timeRemains {
+  color: rgb(0, 68, 255);
+}
